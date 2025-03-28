@@ -18,10 +18,11 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
+    "@fastify/cors": "^11.0.1",
     "@fastify/multipart": "^9.0.3",
     "@prisma/client": "6.5.0",
     "fastify": "^5.2.2",
-    "openai": "^4.89.1",
+    "openai": "^4.90.0",
     "zod": "^3.24.2"
   }
 }

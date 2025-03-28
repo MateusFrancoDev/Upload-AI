@@ -17,11 +17,22 @@ Content-Type: audio/mpeg
 
 ###
 
-# @name create-transcription 
-
+# @name create-transcription
 POST http://localhost:3333/videos/1f32bafb-867c-43e6-b8d9-13b509754541/transcription
 Content-Type: application/json
 
 {
-  "prompt": "standup, ddd "
+  "prompt": "standup, ddd " 
+}
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "1f32bafb-867c-43e6-b8d9-13b509754541 " ,
+  "temperature": 0.5,
+  "templete": "Gere um resumo sucinto da transcrição do video informado a seguir: '''{transcription}'''"
 }
